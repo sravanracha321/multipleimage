@@ -1,0 +1,141 @@
+
+<script>
+    var product = {
+        "Name" : "Samsung TV",
+        "Price": 44500.33,
+        "Stock": true,
+        "Cities": ["Delhi", "Hyd"],
+        "Rating": {"Rate":4.3, "Count": 3500}
+    };
+    document.write(`
+         Name :  ${product.Name} <br>
+         Price:  ${product.Price} <br>
+         Stock:  ${product.Stock} <br>
+         Cities: ${product.Cities.toString()} <br>
+         Rating: ${product.Rating.Rate} [${product.Rating.Count}]
+    `);
+</script>
+
+
+
+
+<!--<script>
+    var product = {
+        "name": "",
+        "price": 0,
+        "stock": false,
+        "cities": [],
+        "rating": { "rate": 0, "count": 0 }
+    }
+    product.name = prompt("enter name");
+    product.price = prompt("enter price");
+    product.stock = prompt("enter stock", "true|false");
+    product.cities[0] = prompt("enter city1")
+    product.cities[1] = prompt("enter city2")
+    product.rating.rate = prompt("enter user rating");
+    product.rating.count = prompt("enter user count");
+
+    document.write(`
+                 name:${product.name}<br>
+                 price:${product.price}<br>
+                 stock:${product.stock}<br>
+                 cities:${product.cities.toString()}<br>
+                 rating:${product.rating.rate}[${product.rating.count}]
+                `);
+
+</script>
+
+
+
+
+
+<!--<script>
+    var product={
+        "name":"samsungtv",
+        "price":34000,
+     
+
+    }
+    for(var property in product)
+    {
+        document.write(`${property}:
+        ${product[property]}<br>`);
+    }
+</script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<script>
+    var product={
+        "name":"samsung tv",
+        "price":34000,
+        "quality":2,
+        "total":function(){
+            return this.quality*this.price
+        },
+        "print":function(){
+            document.write(`name=${this.name}<br>price=${this.price}<br>
+            quality=${this.quality}<br>
+            total=${this.total()}`);
+        }
+    }
+    product.print();
+    document.write("<hr>");
+    product.name="nike casual";
+    product.price=35000;
+    product.quality=3;
+    product.print();
+    document.write("<hr>");
+    product.name="watch";
+    product.price="20000";
+    product.quality=2;
+    product.print();
+
+</script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<script>
+var products=[
+    {Name:"Tv",price:450000,stock:true},
+{Name:"Mobile",price:23000,stock:false}
+];
+document.write("Mobile Price:"+products[1].Price);
+document.write("<hr>");
+
+for(var item of products)
+{
+    document.write(`${item.Name}-${item.price}-${item.Stock}<br>`);
+}
+</script>--
